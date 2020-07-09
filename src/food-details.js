@@ -4,8 +4,8 @@ import styled from "styled-components";
 function FoodDetails(props) {
   return (
     <div onClick={() => props.onFoodDetailsClick(props.calories)}>
-      <StyledItem> {props.name} </StyledItem>
-      <StyledItem> ({props.measure}): </StyledItem>
+      <StyledItem style={{ fontWeight: "bold" }}> {props.name} </StyledItem>
+      <StyledItem style={{ color: "dimgray" }}> ({props.measure}): </StyledItem>
       <StyledItem> {props.calories} Cal </StyledItem>
     </div>
   );
