@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header heading="My Health App" />
+        <Header heading="My Calorie Count" />
         <div
           style={{ fontFamily: "Lucida Sans Unicode", paddingBottom: "10px" }}
         >
