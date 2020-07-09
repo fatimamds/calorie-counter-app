@@ -10,10 +10,10 @@ const NavBar = styled.div`
   padding-bottom: 0;
   margin-bottom: 20px;
   width: 100%;
-  background-color: #424148;
+  background-color: #343a40;
   color: #fff;
   border-color: #080808;
-  min-height: 50px;
+  min-height: 55px;
   border: 1px solid transparent;
 `;
 
@@ -26,8 +26,8 @@ export function Header(props) {
           fontFamily: "Lucida Sans Unicode",
           fontWeight: "bold",
           textAlign: "left",
-          paddingTop: "10px",
-          paddingLeft: "20px"
+          paddingTop: "14px",
+          paddingLeft: "15px"
         }}
       >
         {props.heading}
