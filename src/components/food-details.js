@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import calorieData from "./data/calorie-data.js";
+
 function FoodDetails(props) {
   return (
     <div onClick={() => props.onFoodDetailsClick(props.calories)}>
@@ -16,4 +18,15 @@ export const StyledItem = styled.span`
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 `;
 
-export default FoodDetails;
+/* Display Food Details Table */
+export function FoodTable(props) {
+  return calorieData.map(foodItem => (
+    <FoodDetails
+      key={foodItem.name}
+      name={foodItem.name}
+      measure={foodItem.measure}
+      calories={foodItem.calories}
+      onFoodDetailsClick={name => props.onFoodDetailsClick(name)}
+    />
+  ));
+}

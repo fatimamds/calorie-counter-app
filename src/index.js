@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
 
-import { Header, FoodTable, FoodClicked, Footer } from "./components";
-import { Button } from "./Button";
+import { Footer } from "./components/Footer";
+import { FoodClicked } from "./components/FoodClicked";
+import { FoodTable } from "./components/food-details";
+import { Header } from "./components/NavBar";
+import { Button } from "./components/Button";
 
 class App extends React.Component {
   state = { totalCalorie: 0 };
