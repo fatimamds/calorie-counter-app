@@ -5,16 +5,18 @@ import calorieData from "./data/calorie-data.js";
 
 function FoodDetails(props) {
   return (
-    <div onClick={() => props.onFoodDetailsClick(props.calories)}>
+    <li
+      className="container w-50 list-group-item"
+      onClick={() => props.onFoodDetailsClick(props.calories)}
+    >
       <StyledItem style={{ fontWeight: "bold" }}> {props.name} </StyledItem>
       <StyledItem style={{ color: "dimgray" }}> ({props.measure}): </StyledItem>
       <StyledItem> {props.calories} Cal </StyledItem>
-    </div>
+    </li>
   );
 }
 
 export const StyledItem = styled.span`
-  color: "green";
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 `;
 
