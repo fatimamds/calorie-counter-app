@@ -32,7 +32,8 @@ class App extends React.Component {
             marginRight: "auto",
             width: "50%",
             display: "flex",
-            alignItems: "center"
+            alignItems: "center",
+            paddingBottom: "10px"
           }}
         >
           <FoodClicked
